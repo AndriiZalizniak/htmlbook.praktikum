@@ -1,0 +1,1910 @@
+<!--Батарейка-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Батарейка</title>
+    <style>
+        .battery{
+            margin: 10px;
+            width: 100px;
+            height: 25px;
+            border: 2px solid #000;    
+        }
+        .low::after, 
+        .medium::after, 
+        .hight::after{
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 10px;
+            background: #000;
+            left: 120px;
+            top: 19px;
+        }
+        .medium::after{
+            top: 58px;
+        }
+        .hight::after{
+            top: 97px;
+        }
+        .low{
+            width: 25px;
+            height: 25px;
+            background: red;
+        }
+        .medium{
+            width: 75px;
+            height: 25px;
+            background: orange;
+        }
+        .hight{
+            width: 100px;
+            height: 25px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+       <div class="battery">
+           <div class="low"></div>
+       </div>
+       <div class="battery">
+           <div class="medium"></div>
+       </div>
+       <div class="battery">
+           <div class="hight"></div>
+       </div>
+</body>
+</html>
+
+
+<!--Вырезанные уголки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Вырезанные уголки</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; 
+            margin-left: 2px; 
+            width: 400px;
+            height: 100px;
+            background: green;
+        }
+        div::before{
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 92px;
+            left: 6px;
+            top: 12px;
+            background: green;
+        }
+        div::after{
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 92px;
+            left: 410px;
+            top: 12px;
+            background: green;
+        }
+        p{
+            margin: 25px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+       <div><p>Содержимое</p></div>
+</body>
+</html>
+
+
+<!--Гламурная кнопка-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Гламурная кнопка</title>
+    <style>
+       div{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100px;
+           height: 26px;
+           
+           border: 1px solid pink;
+           border-radius: 50px;
+       }
+       a{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            width: 98px;
+           height: 24px;
+           border-radius: 50px;
+           text-decoration: none;
+           text-align: center;
+           font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+           color: black;
+           
+           background: linear-gradient(to top, rgb(255, 192, 203) 30%,  rgb(255, 225, 225) 50%, rgb(255, 192, 203) 70%);
+           
+       }
+    </style>
+</head>
+<body>
+    <div><a href="#">Кнопка</a></div>
+       
+</body>
+</html>
+
+
+<!--Градиентные кнопки в Safari-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Градиентные кнопки в Safari</title>
+    <style>
+        button{
+            margin: 10px;
+            border: 1px solid rgb(138, 138, 138);
+            border-radius: 5px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333;
+        }
+        .but1{
+            background: -webkit-linear-gradient(to top, rgb(253, 253, 253), rgb(30, 223, 230));
+            background: -moz-linear-gradient(to top, rgb(253, 253, 253), rgb(30, 223, 230));
+            background: linear-gradient(to top, rgb(253, 253, 253), rgb(30, 223, 230));
+        }
+        .but2{
+            background: -webkit-linear-gradient(to top, rgb(0, 204, 17) 30%,  rgb(1, 163, 15) 50%, rgb(0, 204, 17) 70%);
+            background: -moz-linear-gradient(to top, rgb(0, 204, 17) 30%,  rgb(1, 163, 15) 50%, rgb(0, 204, 17) 70%);
+            background: linear-gradient(to top, rgb(0, 204, 17) 30%,  rgb(1, 163, 15) 50%, rgb(0, 204, 17) 70%);
+        }
+        .but3{
+            background: -webkit-linear-gradient(to top,  rgb(35, 200, 206), rgb(35, 203, 209), rgb(241, 241, 241));
+            background: -moz-linear-gradient(to top,  rgb(35, 200, 206), rgb(35, 203, 209), rgb(241, 241, 241));
+            background: linear-gradient(to top,  rgb(35, 200, 206), rgb(35, 203, 209), rgb(241, 241, 241));
+            color: rgb(255, 255, 255);
+        }
+        .but4{
+            background: -webkit-linear-gradient(to top,  rgb(0, 0, 0), rgb(29, 29, 29),  rgb(41, 41, 41), rgb(133, 133, 133), rgb(255, 255, 255));
+            background: -moz-linear-gradient(to top,  rgb(0, 0, 0), rgb(29, 29, 29),  rgb(41, 41, 41), rgb(133, 133, 133), rgb(255, 255, 255));
+            background: linear-gradient(to top,  rgb(0, 0, 0), rgb(29, 29, 29),  rgb(41, 41, 41), rgb(133, 133, 133), rgb(255, 255, 255));
+            border: 2px solid rgb(138, 138, 138);           
+            color: rgb(255, 255, 255);
+        }
+        .but5{
+            border: inset;
+        }
+        .but1:focus, .but2:focus, .but3:focus, .but4:focus,.but5:focus{
+            outline: none;
+        }
+        .but1:active, .but2:active, .but3:active, .but4:active, .but5:active{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <button class="but1">Простой градиент</button>
+    <button class="but2">Выпуклая кнопка</button>
+    <button class="but3">Другая выпуклая кнопка</button>   
+    <button class="but4">Кнопка в стиле Веб 2.0</button>
+    <button class="but5">Вдавленная кнопка</button>
+</body>
+</html>
+
+
+<!--Граница вокруг формы-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Граница вокруг формы</title>
+    <style>
+        fieldset{
+            background: rgb(255, 218, 150) url(check-bg.png) no-repeat;
+            background-position-x: 15px;
+            background-position-y: 20px;            
+
+        }
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: brown;
+        }
+        li{
+            margin: 15px 0 0 100px;
+            list-style: none;
+            
+        }
+        input[type="radio"]{
+            cursor: pointer;
+        }
+        input[type="submit"]{
+            margin-left: 143px;
+            background: brown;
+            color: white;
+            border: 1px solid white;
+        }
+        input[type="submit"]:focus {outline:none}
+        input[type="submit"]:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+        input[type="submit"]:active{
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }    
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Выбор варианта</legend>
+            <p><b>Какой раздел психологии изучает познавательные процессы человеческого сознания?</b></p>
+            <ul>  
+            <li><input type="radio" name="answer" value="Психоанализ"> Психоанализ</li>
+            <li><input type="radio" name="answer" value="Бихевиоризм"> Бихевиоризм</li>
+            <li><input type="radio" name="answer" value="Когнитивная психология"> Когнитивная психология</li>
+            <li><input type="radio" name="answer" value="Гуманистическая психоллогия"> Гуманистическая психоллогия</li>
+            <li><input type="radio" name="answer" value="Гештальт-психоллогия"> Гештальт-психоллогия</li>
+            </ul>
+            <p><input type="submit" value="Ответить"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+<!--Двойная рамка-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Двойная рамка</title>
+    <style>
+        body{
+            background: rgb(255, 245, 158);
+        }
+        p{
+            padding: 15px;
+            margin: 15px;
+            outline: 2px solid red;
+	    border-left: 2px solid orange;
+            border-top: 2px solid orange;
+            box-shadow: 1px 1px 0 3px orange;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Capitania do Duquio daueiro.</p>
+</body>
+</html>
+
+
+<!--Значки для листания фотографий-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Значки для листания фотографий</title>
+    <style>
+       
+        input{
+            display: none;
+        }
+        .foto{
+            float: left;
+            position: relative;
+            
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            background-color: #000;
+            cursor: pointer;
+            margin-right: 10px;
+            bottom: -348px;
+            left: 240px;
+        }
+        #foto1:checked ~ .label1,
+        #foto2:checked ~ .label2,
+        #foto3:checked ~ .label3,
+        #foto4:checked ~ .label4{
+            background-color: #f00;
+            box-shadow: 0 0 4px 1px #fff;
+            cursor: auto;
+            transition: 0.5s;
+        }
+        #foto1:checked ~ .nav{
+            background: url(android.png);
+            transition: 0.3s;
+        }
+        #foto2:checked ~ .nav{
+            background: url(river.jpg);
+            
+            transition: 0.3s;
+        }
+        #foto3:checked ~ .nav{
+            background: url(border.png);
+            transition: 0.3s;
+        }
+        #foto4:checked ~ .nav{
+            background-image: url(check-bg.png);
+            transition: 0.3s;
+        }    
+        .nav{
+            width: 600px;
+            height: 380px;
+        }
+    </style>
+</head>
+<body>
+        <input type="radio" name="radio_foto" id="foto1" checked>
+        <input type="radio" name="radio_foto" id="foto2" >
+        <input type="radio" name="radio_foto" id="foto3">
+        <input type="radio" name="radio_foto" id="foto4">
+        <label for="foto1" class="foto label1"></label>
+        <label for="foto2" class="foto label2"></label>
+        <label for="foto3" class="foto label3"></label>
+        <label for="foto4" class="foto label4"></label>
+    
+        <div class="nav"></div>
+</body>
+</html>
+
+
+<!--Индикатор прогресса-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Индикатор прогресса</title>
+    <style>
+        div{
+            width: 100%;
+            height: 20px;
+            border-radius: 50px;
+            border: 1px solid rgb(3, 3, 3);
+            background: linear-gradient( rgb(192, 192, 192), rgb(49, 49, 49));
+            position: relative;
+            overflow: hidden;
+            box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+        }
+        .prog{
+            width: 77%;
+            height: 18px;/*-2 пикселя от родителя, если бордер 1px*/
+            border: 1px solid rgb(0, 174, 255);
+            border-radius: 50px 0 0 50px;
+            background: linear-gradient(rgb(116, 158, 248), rgb(59, 126, 252), rgb(117, 160, 255));
+            box-shadow: 3px 0 2px rgba(0,0,0,0.3);
+        }
+        /*второй вариант
+        .prog{ 
+            width: 100%;
+            height: 20px;/*-2 пикселa у наследника*
+            border-radius: 50px;
+            border: 1px solid rgb(48, 48, 48);
+            background: linear-gradient(rgb(49, 49, 49), rgb(192, 192, 192));
+            position: relative;
+            overflow: hidden;
+        }
+        .prog::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 18px;
+            border: 1px solid rgb(73, 197, 255);
+            border-radius: 50px 0 0 50px;
+            background: linear-gradient(rgb(116, 158, 248), rgb(59, 126, 252), rgb(117, 160, 255));
+            box-shadow: 1px 0 2px rgba(0,0,0,0.5);
+        }*/
+    </style>
+</head>
+<body>
+    <div><div class="prog"></div></div>
+</body>
+</html>
+
+
+<!--Квадратный корень-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Квадратный корень</title>
+    <style>
+        p{
+           text-align: center;
+            padding: 25px 50px;
+            border: 1px solid rgb(255, 183, 117);
+        }
+        span{
+            border-top: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <p>&radic;<span>81</span> &#61; &#63;</p>
+</body>
+</html>
+
+
+<!--Квадраты-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Квадраты</title>
+    <style>
+        .black{
+            width: 128px;
+            height: 128px;
+            background: #000;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0 0 0 1px rgb(131, 131, 131);
+        }
+        .white{
+            position: relative;
+            top: -50px;
+            left: 50px;
+            width: 128px;
+            height: 128px;
+            background: #fff;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0 0 0 1px rgb(131, 131, 131);
+        }
+    </style>
+</head>
+<body>
+        <div class="black"></div>
+        <div class="white"></div>
+</body>
+</html>
+
+
+<!--Круговая диаграмма/безJS-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Круговая диаграмма</title>
+    <style>
+        .big{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 128px;
+            height: 128px;
+            background: rgb(163, 163, 163);
+            border-radius: 50%;
+            border: 35px solid rgb(65, 116, 0);
+            border-right-color: rgb(103, 182, 0);
+        }
+        p {font-size: 42px}
+        .sp {font-size: 24px}
+    </style>
+</head>
+<body>  
+    <div class="big">
+        <p>75<span class="sp">%</span></p>
+    </div>
+</body>
+</html>
+
+
+<!--Наложение слоев-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Наложение слоев</title>
+    <style>
+        h1{
+            margin: 0;
+            padding: 15px;
+            max-width: 100%;
+            background: green;
+            color: white;
+        }
+        p{
+            position: relative;
+            top: -10px;
+            float: right;
+            margin: 0 0 0 50px;
+            padding: 15px;
+            max-width: 90%;
+            background: gray;
+        }
+    </style>
+</head>
+<body>  
+   <h1>Обязательные поля формы</h1>
+   <p>Сделайте форму, показанную на рис. 1, в которой поля обязательные 
+       к заполнению отмечены крестиком, а необязательные поля зеленой галочкой. 
+       При корректном заполнении обязательных полей должен меняться и рисунок возле поля.</p>
+</body>
+</html>
+
+
+<!--Нумерация-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Нумерация</title>
+    <style>
+        p{
+            display: inline-block;
+            margin: 10px;
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 12px;
+            border: 1px solid rgba(194, 192, 192, 0.555);
+            background: linear-gradient(rgb(255, 255, 255), rgb(209, 209, 209));
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>  
+   <p>1</p>
+   <p>2</p>
+   <p>3</p>
+   <p>4</p>
+   <p>5</p>
+   <p>6</p>
+</body>
+</html>
+
+
+<!--Нумерация страниц-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Нумерация страниц</title>
+    <style>
+        ul{
+            border-bottom: 3px solid gray;
+            background: rgb(229, 203, 203);
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            margin: 0;
+        }
+        .pager-item,
+        .pager-current,
+        .last{
+            padding: 10.2px 15px;   
+        }
+        .first{
+            margin-left: 23px;
+            background: gray;
+            border-bottom: 3px solid rgb(90, 90, 90);
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+        }
+        li:active{
+            background: rgb(194, 194, 194);
+            border-bottom: 3px solid rgb(90, 90, 90);
+            background: gray;  
+        }
+    </style>
+</head>
+<body>  
+        <div class="item-list">
+                <ul class="pager">
+                 <li class="pager-current first"><span>1</span></li>
+                 <li class="pager-item"><a href="" title="На страницу номер 2">2</a></li>
+                 <li class="pager-item"><a href="" title="На страницу номер 3">3</a></li>
+                 <li class="pager-item"><a href="" title="На страницу номер 4">4</a></li>
+                 <li class="pager-next last"><a href="" title="На следующую страницу">›</a></li>
+                </ul>
+               </div>
+               <p>Содержание</p>
+</body>
+</html>
+
+
+
+<!--Обязательные поля формы-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Обязательные поля формы</title>
+    <style>
+        input:valid + span::after{
+            content: url();
+        }
+        input:valid + span::after{
+            content: url();
+        }
+    </style>
+</head>
+<body>  
+        <form action="">
+            <p><b>Пожалуйста, заполните обязательные поля.</b></p>
+            <p>Имя: <input  required aria-required="true" type="text" name="name" ><span></span></p>
+            <p>Возраст: <input required type="number" name="age"  value="" min="1" max="100" step="1"/></p>
+            <p>E-mail: <input required type="email" name="email"><span></span></p>
+            <p>Сайт: <input required type="url" name="web"><span></span></p>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
+</body>
+</html>
+
+
+<!--Поле для игры в гомоку-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Поле для игры в гомоку</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .number{
+        float: left;
+        position: relative;
+        top: -5px;
+        margin-right: 20px;
+      }
+      .number li{
+        margin-bottom: 15px;
+        list-style: none;
+      }
+      .letter{
+       position: relative;
+       left: 10px;
+      }
+      .letter li{
+        margin-right: 19px;
+        display: inline;
+        list-style: none;
+      }
+      li{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  </style>
+ </head>
+ <body>
+   <div>
+    <ul class="number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+    </ul>
+
+    <table border="1" cols="15" cellspacing="0" width="500px" height="500px">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <ul class="letter">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+      </ul>
+    </div>
+</body>
+</html>
+
+
+
+<!--Последняя линия справа-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Последняя линия справа</title>
+    <style>
+      .links { 
+    background: #F6967D;
+   }
+   .links a {
+    color: #FFFDEB;
+    display: inline-block;
+    border-right: 1px solid #B62025;
+    padding: 5px 10px;
+   }
+   
+   /*.links a{border-left: 1px solid #B62025}
+     a:nth-child(4){border-right: none}
+     */
+  </style>
+ </head>
+ <body>
+  <div class="links">
+    <a href="1.html">uno</a>
+    <a href="2.html">dos</a>
+    <a href="3.html">tres</a>
+    <a href="4.html">cuatro</a>
+  </div>
+</body>
+</html>
+
+
+<!--Прогноз погоды-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Прогноз погоды</title>
+    <style>
+      /*table{
+        text-align: center;
+        font-size: 22px;
+      }
+      tr:nth-child(1) td{
+        background: rgb(0, 132, 255);
+        color: white;
+      }
+      tr:nth-child(2){
+        width: 100px;
+        height: 100px;
+      }
+      tr:nth-child(2) td:nth-child(1){
+        background: url(http://htmlbook.ru/files/weather-sun.jpg)  center;
+        background-repeat: no-repeat;
+      }
+      tr:nth-child(2) td:nth-child(2){
+        background: url(http://htmlbook.ru/files/weather-snow.jpg) center;
+        background-repeat: no-repeat;
+      }
+      tr:nth-child(2) td:nth-child(3){
+        background: url(http://htmlbook.ru/files/weather-blizzard.jpg) center;
+        background-repeat: no-repeat;
+      }
+      tr:hover, td:hover{
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+      tr:nth-child(3){
+        background: #fff;
+      }*/
+      section{
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 26px;
+      }
+      .sun, .snow, .blizzard{
+        width: 130px;
+        margin-right: 3px;
+      }
+      .sun:hover, .snow:hover, .blizzard:hover{box-shadow: 0 0 10px rgba(0,0,0,0.7)}
+      #p-top{
+        background: rgb(107, 194, 201);
+        color: white;
+        margin: 0 0 10px 0;
+      }
+      #p-bottom{margin-bottom: 10px}
+
+      .img1, .img2, .img3{height: 85px}
+
+      .img1{background: url(http://htmlbook.ru/files/weather-sun.jpg) no-repeat center}
+      .img2{background: url(http://htmlbook.ru/files/weather-snow.jpg) no-repeat center}
+      .img3{background: url(http://htmlbook.ru/files/weather-blizzard.jpg) no-repeat center}
+    </style>
+ </head>
+ <body>
+   <section>
+  <div class="sun">
+      <p id="p-top">31.08</p>
+      <div class="img1"></div>
+      <p id="p-bottom">+20&ordm;</p>
+   </div>
+   <div class="snow">
+     <p id="p-top">01.09</p>
+     <div class="img2"></div>
+     <p id="p-bottom">-3&ordm;</p>
+   </div>
+   <div class="blizzard">
+     <p id="p-top">02.09</p>
+     <div class="img3"></div>
+     <p id="p-bottom">-10&ordm;</p>
+   </div>
+  </section>
+   <!-- <table width="450px">
+      <tr>
+        <td>31.08</td>
+        <td>01.09</td>
+        <td>02.09</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>+20&ordm;</td>
+        <td>-3&ordm;</td>
+        <td>-10&ordm;</td>
+      </tr>
+    </table>-->
+</body>
+</html>
+
+
+<!--Рамка с поворотом-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Рамка с поворотом</title>
+    <style>
+      div{ /*---------------вариант 1*/
+        width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+      }
+      .first{
+        margin: 15px;
+        transform: rotate(-6deg);
+     }
+     .second{ 
+      
+       position: relative;
+       top: -3px;
+       left: -3px;
+       background: url(http://htmlbook.ru/example/images/venera.png);
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+       transform: rotate(6deg);
+     }
+     /*.img{ -------вариант 2---------
+      margin: 15px;
+       position: relative;
+       top: -3px;
+       left: -3px;
+       background: url(http://htmlbook.ru/example/images/venera.png);
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+     }
+     .img::after{
+       position: absolute;
+       top: -3px;
+       left: -3px;
+       content: '';
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+       z-index: -2;
+       transform: rotate(-6deg);
+     }*/
+
+    </style>
+ </head>
+ <body>
+   <!--вариант 1--><div class="first"><div class="second"></div></div>
+   <!--вариант 2
+     <div class="img"></div>     
+    -->
+</body>
+</html>
+
+
+
+<!--Рейтинг-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Рейтинг</title>
+    <style>
+       .main-line{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 50px;
+          border-radius: 5px;
+          font-size: 22px;
+          background: gray;
+          color: white;
+        }
+        .left-part{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          border-radius: 5px 0 0 5px;
+          background: rgb(93, 139, 22);
+        }  
+        .right-part{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 200px;
+          border-radius: 0px 5px 5px 0;
+        }
+        button{
+          width: 30px;
+          height: 30px;
+          border-radius: 6px;
+          border: none;
+          box-shadow: 0 0 5px rgba(0,0,0,0.5);
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+        }
+        button:nth-child(1){background: rgb(177, 31, 31)}
+        button:nth-child(3){background: rgb(94, 141, 23)}
+    </style>
+</head>
+<body>
+    <div class="main-line">
+      <div class="left-part">
+        <span>9691</span>
+      </div>
+      <div class="right-part">
+        <button>-</button>
+        <span>6</span>
+        <button>+</button>
+      </div>
+    </div>
+</body>
+</html>
+
+
+<!--Создание меню с тенью-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Создание меню с тенью</title>
+    <style>
+       ul{
+         margin: 0;
+         padding: 5px 5px 5px 10px;
+         width: 200px;
+         list-style: none;
+         background: rgb(255, 231, 179);
+         color: brown;
+         font-size: 16px;
+         border: 1px solid black;
+         border-radius: 10px;
+         box-shadow: 5px 5px 0 -2px brown;
+       }
+       li{
+         margin: 5px 0 5px 0;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+      <li>Азу по-татарски</li>
+      <li>Зразы</li>
+      <li>Баранья грудинка, тушенная <br> с картофелем</li>
+      <li>Бефстроганов</li>
+      <li>Бифштекс с яйцом</li>
+    </ul>
+</body>
+</html>
+
+
+<!--Ссылка как кнопка-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ссылка как кнопка</title>
+    <style>
+      a{
+        border: 1px solid black;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{
+        color: brown;
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 235, 213));
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      }
+    </style>
+</head>
+<body>
+    <a href="">Комментирвать</a>
+</body>
+</html>
+
+
+<!--Таблица с зеброй-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Таблица с зеброй</title>
+    <style>
+   .lux { 
+    width: 300px;
+    border: 1px solid #a52a2a;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .lux th {
+    background: #a52a2a;
+    color: white; 
+   }
+   .lux td { 
+    border-bottom: 1px solid #a52a2a;
+   }
+   .lux td, .lux th {
+    padding: 4px;
+   }
+   /*-------------Нвые стили----------*/
+   tr:nth-child(3), tr:nth-child(5){background: rgb(255, 235, 213)}
+   tr:nth-child(2), tr:nth-child(4){background: rgb(255, 244, 232)}
+   td:nth-child(2), td:nth-child(3), td:nth-child(4){text-align: center}
+  </style>
+ </head>
+ <body>
+  <table class="lux">
+   <tr><th></th><th>2004</th><th>2005</th><th>2006</th></tr>
+   <tr><td>Рубины</td><td>43</td><td>51</td><td>79</td></tr>
+   <tr><td>Изумруды</td><td>28</td><td>34</td><td>48</td></tr>
+   <tr><td>Сапфиры</td><td>29</td><td>57</td><td>36</td></tr>
+   <tr><td>Аметисты</td><td>23</td><td>64</td><td>97</td></tr>
+  </table>
+</body>
+</html>
+
+
+<!--Текст в рамке(черно-белый)-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Текст в рамке</title>
+    <style>
+   div{
+     margin: 25px;
+     display: inline-block;
+     padding: 15px 0 2px 7px;
+     border: 1px solid black;
+     font-family: sans-serif;
+     font-size: 26px;
+   }
+   .white{
+     padding: 14px 6px 1px 1px;
+     background: black;
+     border: 1px solid white;
+     color: white;
+   }
+  </style>
+ </head>
+ <body>
+  <div>
+    <span class="blacl">BLACK</span>
+    <span class="white">WHITE</span>
+  </div>
+</body>
+</html>
+
+
+<!--Текст для галочки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Текст для галочки</title>
+    <style>
+      input{margin: 0 10px 0 0}
+      span{padding: 3px}
+      :checked + span{background: yellow}
+  </style>
+ </head>
+ <body>
+     <p><input type="checkbox" name="detali" id=""> <span>Балка рукояти</span></p>
+     <p><input type="checkbox" name="detali" id=""> <span>Шестерня</span></p>
+     <p><input type="checkbox" name="detali" id=""> <span>Вал</span></p>
+     <p><input type="checkbox" name="detali" id=""> <span>Пимпочка</span></p>
+     <p><input type="submit" value="Отправить"></p>
+</body>
+</html>
+
+
+<!--Тактико-технические характеристики-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ТТХ</title>
+    <style>
+      .block{
+        width: 350px;
+        overflow: hidden;
+      }
+      #content{
+        margin: 10px 0;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        background: rgb(173, 173, 173);
+        color: rgb(255, 255, 255);
+        transform: skewX(-40deg);
+      }
+      #content p{
+        margin: 7px 0;
+        transform: skewX(40deg);
+        width: 130px
+      }
+      span{
+        margin: 0 2px;
+        display: inline;
+        position: relative;
+        top: 10px;
+        width: 15px;
+        height: 15px;
+      }
+      #content #aqua{background: linear-gradient(rgb(0, 233, 233), rgb(0, 231, 231))}
+      #content #yellow{background: linear-gradient(rgb(255, 255, 0), rgb(223, 223, 0))}
+      #content #orange{background: linear-gradient(rgb(255, 113, 62), rgb(255, 109, 56))}
+      #content #grey{background: linear-gradient(rgb(212, 212, 212), rgb(207, 207, 207))}
+  </style>
+ </head>
+ <body>
+  <p>Тактико-технические характеристики вооружения ЫЩ-35У (образца 2035 гда)</p>
+  <div class="block">
+  <div id="content">
+    <p>Уровень зарядки</p>
+    <span id="aqua"></span>
+    <span id="aqua"></span>
+    <span id="yellow"></span>
+    <span id="yellow"></span>
+    <span id="orange"></span>
+    <span id="orange"></span>
+  </div>
+  <div id="content">
+    <p>Убойная сила</p>
+    <span id="aqua"></span>
+    <span id="aqua"></span>
+    <span id="yellow"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+  </div>
+  <div id="content">
+    <p>Перезарядка</p>
+    <span id="aqua"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+    <span id="grey"></span>
+  </div>
+  </div>
+</body>
+</html>
+
+
+<!--Форма регистрации-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Форма регистрации</title>
+    <style>
+      form{
+        width: 450px;
+        background: rgb(13, 147, 236);
+        border: 3px solid rgb(11, 112, 179);
+        font-family: 'Arial Narrow Bold', sans-serif;
+        color: white;
+      }
+      h2{
+        margin-left: 25px;
+        font-weight: 400;
+      }
+      p{
+        display: inline-block;
+        margin: 15px 0 15px 25px;
+      }
+      input[type=submit]{
+        margin: 25px;
+        padding: 5px 10px;
+        border: none;
+        background: linear-gradient(rgb(253, 253, 162), rgb(252, 252, 148));
+      }  
+  </style>
+ </head>
+ <body>
+  <form action="">
+    <h2>Регистрация</h2>
+    <hr>
+    <p>E-mail <br><input type="email" name="email" size="49"></p><br>
+    <p>Пароль<br><input type="password" name="password"></p>
+    <p>Еще раз <br><input type="password" name="password"></p><br>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>
+
+
+<!--Формула по центру-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Формула по центру</title>
+    <style>
+      div{
+        text-align: center;
+        }
+      p:nth-child(2){
+        float: right;
+      }
+  </style>
+ </head>
+ <body>
+    <p>Бином Ньютона</p>  
+    <div>
+    <img src="http://htmlbook.ru/example/images/binom.png" alt="">
+    <p>(12.1)</p>
+    </div>
+</body>
+</html>
+
+
+<!--Хлебные крошки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Хлебные крошки</title>
+    <style>
+      .main-line{
+            width: 100%;
+            height: 40px;
+            border-radius: 0 50px 50px 0;
+            background: linear-gradient( rgb(255, 255, 255), rgb(195, 221, 154));
+            position: relative;
+            overflow: hidden;
+            box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+        }
+        .one, .two, .three, .four{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+          padding: 0 10px 0 5px;
+          height: 40px;
+          width: 3%;
+          border-right: 2px solid rgb(255, 255, 255);
+          border-radius: 0 50px 50px 0;
+        }
+        #num4{width: 6%}
+  </style>
+ </head>
+ <body>
+    <div class="main-line">
+      <span id="num1" class="one">Uno</span>
+      <span id="num2" class="two">Dos</span>
+      <span id="num3" class="three">Tres</span>
+      <span id="num4" class="four">Quatro</span>
+    </div>
+</body>
+</html>
+
+
+<!--Цветные колонки в таблице-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Цветные колонки в таблице</title>
+    <style>
+      th{
+        text-align: left;
+        background: gray;
+        color: white;
+      }
+      td:nth-child(1){
+        background: rgb(161, 255, 255);
+      }
+      td:nth-child(2), 
+      td:nth-child(4){
+        background: rgb(252, 252, 158);
+      }
+      td:nth-child(3){
+        text-align: center;
+        background: rgb(161, 255, 255);
+      }
+    </style>
+</head>
+<body>
+     <table width='450px' cellspacing="0" border="1">
+       <tr>
+         <th>Название</th>
+         <th>Цвет</th>
+         <th>Твердость по Моосу</th>
+         <th>Формула</th>
+       </tr>
+       <tr>
+         <td>Алмаз</td>
+         <td>Белый</td>
+         <td>10</td>
+         <td>С</td>
+       </tr>
+       <tr>
+         <td>Рубин</td>
+         <td>Красный</td>
+         <td>9</td>
+         <td>Al<sub>2</sub>O<sub>3</sub></td>
+       </tr>
+       <tr>
+         <td>Аметист</td>
+         <td>Голубой</td>
+         <td>7</td>
+         <td>SiO<sub>2</sub></td>
+        </tr>
+        <tr>
+          <td>Изумруд</td>
+          <td>Зеленый</td>
+          <td>8</td>
+          <td>Be<sub>3</sub>Al<sub>2</sub>(SiO<sub>3</sub>)<sub>6</sub></td>
+        </tr>
+        <tr>
+          <td>Сапфир</td>
+          <td>Голубой</td>
+          <td>9</td>
+          <td>Al<sub>2</sub>O<sub>3</sub></td>
+        </tr>
+     </table>
+</body>
+</html>
+
+
+<!--Цитата-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Цитата</title>
+    <style>
+      blockquote{
+        position: relative;
+        padding: 5px 0px 0 50px;
+        font-size: 2em;
+      }
+      blockquote::before, blockquote::after{
+        position: absolute;
+        color: brown;
+        font-size: 1.3em;
+      }
+      blockquote::before{
+        content: '«';
+        top: 0;
+        left: 0;
+      }
+      blockquote::after{
+        content: '»';
+        bottom: -0.5em;
+        left: 10em; 
+      }
+    </style>
+</head>
+<body>
+ <blockquote>
+    <p>Не ошибается лишь тот, кто ничего не делает! Не бойтесь ошибаться &mdash; бойтесь повторять ошибки.</p>
+    <p>Теодор Рузвельт</p>
+ </blockquote>
+</body>
+</html>
+
+
+<!--Шаг 4-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Шаг 4</title>
+    <style>
+      div{
+        position: absolute;
+        z-index: -1;
+        top: 37px;
+        left: 50px;
+        width: 485px;
+        height: 3px;
+        background: gray;
+      }
+      li{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 65px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        list-style: none;
+        background: greenyellow;
+      }
+      li:last-child{
+        margin-right: 0;
+        background: gray;
+      }
+      li:nth-last-child(2){
+        background: purple;
+      }
+    </style>
+</head>
+<body>
+ <div></div>
+  <ul>
+   <li>1</li>
+   <li>2</li>
+   <li>3</li>
+   <li>4</li>
+   <li>5</li>
+ </ul>
+</body>
+</html>
+
+
+<!--ЭКГ-5-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>ЭКГ-5</title>
+    <style>
+      body{
+        background: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div{
+        position: absolute;
+        width: 150px;
+        transform: skewX(-40deg);
+        background: rgb(0, 0, 0);
+      }
+      h2{
+        padding-left: 50px;
+        transform: skewX(40deg);
+        color: wheat;
+      }
+      p{
+        margin: 0 25px;
+        padding: 70px 20px 20px 10px;
+        border-radius: 70px 0 15px 15px;
+        background: rgb(255, 255, 255);
+      }
+    </style>
+</head>
+<body>
+  <div><h2>ЭКГ-5</h2></div>
+  <p>ЭКГ-5 &mdash; карьерный гусеничный экскаватор с ковшом вместимостью 5м<sup>3</sup> &mdash; электрическая 
+  карьерная полноповоротная лопата на гусеничном ходу, предназначенная для выемки и погрузки в транспортные 
+  средства полезных ископаемых и вскрышных пород, в том числе тяжёлых скальных, предварительно разрыхлённых взрывом, 
+  в угольной промышленности, а также для выполнения больших объёмов земляных работ в промышленном строительстве. </p>
+</body>
+</html>
