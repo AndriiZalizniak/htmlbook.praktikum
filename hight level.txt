@@ -1,0 +1,1275 @@
+<!--Блок с градиентом-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Блок с градиентом</title>
+    <style>
+    div{
+      margin: 0 15px 0 15px;
+      background: linear-gradient(rgba(72, 255, 209, 0.4), rgba(37, 158, 138, 0.4));
+      border: 2px solid rgba(79, 170, 155, 0.5);
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .title {
+      position: relative;
+      padding: 15px;
+      margin: 10px 10px 0 10px;
+      background: linear-gradient(rgb(255, 224, 121), rgb(255, 207, 49));
+      border: 1px solid rgb(87, 86, 86);
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      font-size: 22px;
+    }
+    .title::after  {
+      position: absolute;
+      top: 100%;
+      border: solid;
+      content: '';
+      height: 0;
+      width: 0;
+      left: 15px;
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: rgb(255, 207, 49);
+      border-width: 12px;
+    }
+    .subtitle{
+      margin: 0 10px 10px 10px;
+      padding: 25px 0 25px 15px;
+      height: 100px;
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(87, 86, 86);
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+ </head>
+ <body>
+ <div>
+   <p class="title">Загловок</p>
+   <p class="subtitle">Содержимое</p>
+ </div>
+</body>
+</html>
+ </head>
+ <body>
+ <div>
+   <p class="title">Загловок</p>
+   <p class="subtitle">Содержимое</p>
+ </div>
+</body>
+</html>
+
+
+
+<!--Блок с тенью-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Блок с тенью</title>
+    <style>
+    .title{
+      word-wrap: break-word;
+      padding: 0 15px;
+      margin: 10px 10px -1px 10px;
+      max-width: 250px;
+      background: rgb(188, 212, 172);
+      border: 1px solid rgb(108, 172, 66);
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 1px 7px 10px 0 rgb(188, 212, 172),
+                  0 -1px 10px 1px rgba(56, 141, 0, 0.5);
+      font-size: 22px;
+    }
+    .subtitle{
+      position: relative;
+      margin: 0 10px 10px 10px;
+      padding: 25px 0 25px 15px;
+      height: 100px;
+      background: rgb(188, 212, 172);
+      border: 1px solid rgb(108, 172, 66);
+      border-radius: 0 5px 5px 5px;
+      box-shadow: 0 0 10px 2px rgba(56, 141, 0, 0.5);
+      z-index: -1;
+    }
+  </style>
+ </head>
+ <body>
+   <p class="title">Заголовок</p>
+   <p class="subtitle">Содержимое</p>
+</body>
+</html>
+
+
+
+<!--Блок с указателем-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Блок с указателем</title>
+    <style>
+     body{
+       background: black;
+     }
+     p{
+       position: relative;
+       max-width: 100%;
+       margin: 30px 15px;
+       padding: 25px 0;
+       border: 4px solid rgb(91, 198, 212);
+       background: rgb(46, 156, 170);
+       color: white;
+       text-align: center;
+     }
+     p::before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 47%;
+      top: -50px;
+      border: 24px solid;
+      border-color: transparent transparent rgb(91, 198, 212) transparent;
+     }
+     p::after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 47%;
+      top: -44px;
+      border: 24px solid;
+      border-color: transparent transparent rgb(46, 156, 170) transparent;
+     }
+  </style>
+ </head>
+ <body>
+   <p>Дистанции огромного размера</p>
+</body>
+</html>
+
+
+
+<!--Знак французских ВВС-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Знак французских ВВС</title>
+    <style>
+     /*//////способ1/////
+     div{ 
+       margin: 25px;
+       width: 25px;
+       height: 25px;
+       border-radius: 50%;
+       background: blue;
+       border: 10px solid white;
+       box-shadow: 0 0 0 8px red;
+     }*/
+
+     /* ////////способ2///////
+     .red{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: red;
+     }
+     .white{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 75px;
+       height: 75px;
+       border-radius: 50%;
+       background: rgb(255, 255, 255);
+     }
+     .blue{
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       background: blue;
+     }*/
+
+     /*div{ //////////вариант 3////////
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+       background: radial-gradient(circle at center, rgb(57, 54, 221) 20px, white 21px, white 39px, red 40px ); 
+     }*/
+
+    /*div{//////вариант 4///////
+      margin: 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: blue;
+      box-shadow: 0 0 0 15px white, 0 0 0 25px red;
+    }*/
+  </style>
+ </head>
+ <body>
+   <!--<div></div>   //////способ 1,3,4//////-->
+
+  <!--<div class="red">  ///////способ 2///////
+     <div class="white">
+       <div class="blue"></div>
+     </div>
+   </div>-->
+</body>
+</html>
+
+
+
+<!--Индикатор выполнения-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Индикатор выполнения</title>
+    <style>
+      .block{
+        position: relative;
+        width: 250px;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0);
+        font-size: 22px;
+      }
+      .progres{
+        position: absolute;
+        width: 81%;
+        height: 100%;
+        background: rgb(158, 120, 50);
+        z-index: -1;
+      }
+      .wrap{
+        display: flex;
+        justify-content: space-between;
+      }
+  </style>
+ </head>
+ <body>
+<div class="block">
+    <div class="progres"></div>
+    <div class="wrap">
+      <span>0</span>
+      <span>50%</span>
+      <span>5</span>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!--Картинка с тенью-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Картинка с тенью</title>
+    <style>
+     figure{
+      width: 200px;
+      height: 150px;
+      display: inline-block;
+      border-radius: 30%;
+      box-shadow: 0 35px 25px -20px rgba(51, 51, 51, 0.61);
+     }
+     img{
+       display: block;
+       border-radius: 5px;
+       border: 5px solid #fff;
+       box-shadow: 0 0 0 1px rgb(151, 151, 151);
+     }
+  </style>
+ </head>
+ <body>
+   <figure>
+    <img src="http://htmlbook.ru/files/ranetka.jpg" alt="">
+  </figure>
+</body>
+</html>
+
+
+
+<!--Ниспадающее меню-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ниспадающее меню</title>
+    <style>
+      #nav{
+      	float:left;
+      	list-style:none;
+      }
+      #nav li{
+      	position: relative;
+        float: left;
+      	margin-right: 10px;
+      	display: block;
+      }
+      #nav li a{
+	      display: block;
+	      padding: 5px;
+	      color: blue;
+	      text-decoration: underline;
+      }
+      #nav li ul{
+        display: none;
+      }
+      #nav > li:hover {
+        position: relative;
+        background: #fff;
+        box-shadow: 
+                    0px 0px 5px #333;
+        border-radius: 5px 5px 0 0;
+      }
+      #nav li:hover > a{
+        text-decoration: none;
+        color: black;
+      }
+     #nav li:hover ul{
+       display: block;
+       position: absolute;
+       width: 60px;
+       box-shadow: 0 0 5px #333;
+     }
+     #nav li:hover ul a{
+      position: relative;
+      text-decoration: none;
+      left: -40px;
+     }
+     #nav li:hover ul li{
+      text-align: center;
+     }
+     #nav li ul li a:hover{
+      background: rgb(111, 111, 214);
+      color: white;
+      }
+  </style>
+ </head>
+ <body>
+   <ul id="nav">
+    <li><a href="#">Файл</a>
+      <ul>
+        <li><a href="#">Новый</a></li>
+        <li><a href="#">Открыть</a></li>
+        <li><a href="#">Сохранить</a></li>
+        <li><a href="#">Закрыть</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Правка</a>
+      <ul>
+        <li><a href="#">Вырезать</a></li>
+        <li><a href="#">Копировать</a></li>
+        <li><a href="#">Вставить</a></li>
+        <li><a href="#">Удалить</a></li>
+      </ul>
+    </li>
+   </ul>
+</body>
+</html>
+
+
+
+<!--Нумерованные списки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Нумерованные списки</title>
+  <style>
+    ol{
+      list-style-type: decimal-leading-zero;
+    }
+
+  </style>
+</head>
+<body>
+
+     <ol type="1">
+        <li>Баал</li>
+        <li>Агарес</li>
+        <li>Марбас</li>
+        <li>Пруфлас</li>
+        <li>Аамон</li>
+     </ol>
+     <ol type="1">
+        <li value="6">Барбатос</li>
+        <li>Буер</li>
+        <li>Гасион</li>
+        <li>Ботис</li>
+     </ol>
+</body>
+</html>
+
+
+
+<!--Обратная связь-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Обратная связь</title>
+  <style>
+   div{
+      position: fixed;
+      padding: 10px 0 10px 10px;
+      bottom: 100px;
+      left: -390px;
+      width: 380px;
+      height: 100px;
+      transition: 2s linear;
+      transition-delay: 0.5s;
+      background: rgb(85, 85, 85);
+    }
+    .visib{
+      position: relative;
+      padding: 0 5px;
+      bottom: 119px;
+      left: 380px;
+      width: 110px;
+      border-radius: 0 0 15px 15px;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      transition: 2s linear;
+      transition-delay: 0.5s;
+      text-align: center;
+      background: yellow;
+    }
+    .par{
+      position: relative;
+      margin-left: 5px;
+      bottom: 115px;
+      left: 110px;
+      width: 270px;
+      font-size: 18px;
+      line-height: 1.25em;
+      word-wrap: break-word;
+      color: white;
+    }
+     div:hover{
+      left: 0px;
+      transition: 2s linear;
+    }
+
+  </style>
+</head>
+<body>
+    <ul id="nav">
+        <li><a href="#">Файл</a>
+          <ul>
+            <li><a href="#">Новый</a></li>
+            <li><a href="#">Открыть</a></li>
+            <li><a href="#">Сохранить</a></li>
+            <li><a href="#">Закрыть</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Правка</a>
+          <ul>
+            <li><a href="#">Вырезать</a></li>
+            <li><a href="#">Копировать</a></li>
+            <li><a href="#">Вставить</a></li>
+            <li><a href="#">Удалить</a></li>
+          </ul>
+        </li>
+       </ul><ul id="nav">
+          <li><a href="#">Файл</a>
+            <ul>
+              <li><a href="#">Новый</a></li>
+              <li><a href="#">Открыть</a></li>
+              <li><a href="#">Сохранить</a></li>
+              <li><a href="#">Закрыть</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Правка</a>
+            <ul>
+              <li><a href="#">Вырезать</a></li>
+              <li><a href="#">Копировать</a></li>
+              <li><a href="#">Вставить</a></li>
+              <li><a href="#">Удалить</a></li>
+            </ul>
+          </li>
+         </ul><ul id="nav">
+            <li><a href="#">Файл</a>
+              <ul>
+                <li><a href="#">Новый</a></li>
+                <li><a href="#">Открыть</a></li>
+                <li><a href="#">Сохранить</a></li>
+                <li><a href="#">Закрыть</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Правка</a>
+              <ul>
+                <li><a href="#">Вырезать</a></li>
+                <li><a href="#">Копировать</a></li>
+                <li><a href="#">Вставить</a></li>
+                <li><a href="#">Удалить</a></li>
+              </ul>
+            </li>
+           </ul><ul id="nav">
+              <li><a href="#">Файл</a>
+                <ul>
+                  <li><a href="#">Новый</a></li>
+                  <li><a href="#">Открыть</a></li>
+                  <li><a href="#">Сохранить</a></li>
+                  <li><a href="#">Закрыть</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Правка</a>
+                <ul>
+                  <li><a href="#">Вырезать</a></li>
+                  <li><a href="#">Копировать</a></li>
+                  <li><a href="#">Вставить</a></li>
+                  <li><a href="#">Удалить</a></li>
+                </ul>
+              </li>
+             </ul>
+  <div>
+    <img src="http://htmlbook.ru/files/feedback.jpg" alt="">
+    <p class="par">Если у вас возникли вопросы по этому коду, звоните мне по телефону: 555-3298. <br>Звонок платный</p>
+    <p class="visib">Обратная связь</p>
+  </div>
+  <ul id="nav">
+      <li><a href="#">Файл</a>
+        <ul>
+          <li><a href="#">Новый</a></li>
+          <li><a href="#">Открыть</a></li>
+          <li><a href="#">Сохранить</a></li>
+          <li><a href="#">Закрыть</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Правка</a>
+        <ul>
+          <li><a href="#">Вырезать</a></li>
+          <li><a href="#">Копировать</a></li>
+          <li><a href="#">Вставить</a></li>
+          <li><a href="#">Удалить</a></li>
+        </ul>
+      </li>
+     </ul><ul id="nav">
+        <li><a href="#">Файл</a>
+          <ul>
+            <li><a href="#">Новый</a></li>
+            <li><a href="#">Открыть</a></li>
+            <li><a href="#">Сохранить</a></li>
+            <li><a href="#">Закрыть</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Правка</a>
+          <ul>
+            <li><a href="#">Вырезать</a></li>
+            <li><a href="#">Копировать</a></li>
+            <li><a href="#">Вставить</a></li>
+            <li><a href="#">Удалить</a></li>
+          </ul>
+        </li>
+       </ul><ul id="nav">
+          <li><a href="#">Файл</a>
+            <ul>
+              <li><a href="#">Новый</a></li>
+              <li><a href="#">Открыть</a></li>
+              <li><a href="#">Сохранить</a></li>
+              <li><a href="#">Закрыть</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Правка</a>
+            <ul>
+              <li><a href="#">Вырезать</a></li>
+              <li><a href="#">Копировать</a></li>
+              <li><a href="#">Вставить</a></li>
+              <li><a href="#">Удалить</a></li>
+            </ul>
+          </li>
+         </ul>
+</body>
+</html>
+
+
+
+<!--Рамка-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Рамка</title>
+  <style>
+   div{
+    position: absolute;
+     width: 400px;
+     height: 250px;
+     background: rgb(18, 158, 104);
+     /*box-shadow: 5px 5px 0 2px rgba(18, 158, 104, 0.6),-------1
+                 10px 10px 0 4px rgba(18, 158, 104, 0.3);*/
+   }
+   /*.one{--------2
+     position: absolute;
+     width: 400px;
+     height: 250px;
+     background: rgb(18, 158, 104);
+   }
+   .two{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 400px;
+     height: 250px;
+     background: rgba(18, 158, 104, 0.6);
+     z-index: -1;
+   }
+   .three{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 400px;
+     height: 250px;
+     background: rgba(18, 158, 104, 0.3);
+     z-index: -2;
+   }
+   /*div::before{      --------3
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 250px;
+    top: 15px;
+    left: 15px;
+    background: rgb(18, 158, 104, 0.6);
+   }
+   div::after{
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 250px;
+    top: 22px;
+    left: 22px;
+    background: rgb(18, 158, 104, 0.3);
+   }*/
+   
+  </style>
+</head>
+<body>
+   <div class="one"></div>
+   <div class="two"></div>
+   <div class="three"></div>
+</body>
+</html>
+
+
+
+<!--Рамка вокруг текста-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Рамка вокруг текста</title>
+  <style>
+   p{
+     margin: 10px;
+     padding: 5px;
+     width: 200px;
+     
+     background: red;
+     /*box-shadow: 0 0 0px 1px white,------3
+                 0 0 0px 2px red;
+     /*border: 2px solid white; ----1
+     outline: 2px solid red;*/
+   }
+
+   /*p::before{------2
+     position: absolute;
+     content: '';
+     padding: 5px;
+     left: 15px;
+     top: 8px;
+     width: 205px;
+     height: 23px;
+     background: rgb(255, 255, 255); 
+     z-index: -1; 
+    }
+   p::after{
+     position: absolute;
+     content: '';
+     padding: 5px;
+     left: 12px;
+     top: 5px;
+     width: 211px;
+     height: 29px;
+     background: rgb(255, 0, 0); 
+     z-index: -2; 
+    }*/
+  </style>
+</head>
+<body>
+   <p>Рамка вокруг текста</p>
+</body>
+</html>
+
+
+
+<!--Социальные связи-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Социальные связи</title>
+  <style>
+    body{
+      margin: 25px;
+    }
+    #foto{
+      position: relative;
+      display: inline-block;
+      margin-right: 25px;
+    }
+    .person3{
+      margin-right: 0;
+    }
+    img{
+      border-radius: 50%;
+      border: 3px solid rgb(191, 191, 191);
+    }
+    a{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(http://htmlbook.ru/files/social_icons.png);
+    }
+    .person1-vk,
+    .person2-vk,
+    .person3-vk{
+      top: 0;
+      left: 20px;
+      background-position: -60px -30px;
+    }
+    .person1-vk:hover,
+    .person2-vk:hover,
+    .person3-vk:hover{
+      background-position: -60px 0px;
+    }
+    .person1-tw{
+      top: 30px;
+      left: -5px;
+      background-position: -30px -30px;
+    }
+    .person1-tw:hover{
+      background-position: -30px 0px;
+    }
+    .person1-fb,
+    .person3-fb{
+      top: 66px;
+      left: -15px;
+      background-position: 0 -30px;
+    }
+    .person1-fb:hover,
+    .person3-fb:hover{
+      background-position: 0 0;
+    }
+    .person1-em,
+    .person2-em,
+    .person3-em{
+      top: 150px;
+      left: 65px;
+      background-position: -90px -30px;
+    }
+    .person1-em:hover,
+    .person2-em:hover,
+    .person3-em:hover{
+      background-position: -90px 0;
+    }
+  </style>
+</head>
+<body>
+   <div  id="foto" class="person1">
+     <img src="http://htmlbook.ru/files/person1.jpg" alt="бабенка в шляпе">
+     <a href="" class="person1-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person1-tw" title="Перейти на страницу Твиттер"></a>
+     <a href="" class="person1-fb" title="Перейти на страницу Фейсбук"></a>
+     <a href="" class="person1-em" title="Написать письмо"></a>
+   </div>
+   <div id="foto" class="person2">
+     <img src="http://htmlbook.ru/files/person2.jpg" alt="бабенка с цветком">
+     <a href="" class="person2-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person2-em" title="Написать письмо"></a>
+   </div>
+   <div id="foto" class="person3">
+     <img src="http://htmlbook.ru/files/person3.jpg" alt="менеджер бабенок">
+     <a href="" class="person3-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person3-fb" title="Перейти на страницу Фейсбук"></a>
+     <a href="" class="person3-em" title="Написать письмо"></a>
+   </div>
+</body>
+</html>
+
+
+
+<!--Так-тикс-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Так-тикс</title>
+  <style>
+table {
+  overflow: hidden;
+}
+td{
+  position: relative;
+  background: radial-gradient(circle at center, blue 16px, rgba(255, 255, 255, 0) 17px);
+}
+tr:hover {
+  background-color: rgb(255, 255, 143);
+}
+td:hover{
+  background: radial-gradient(circle at center, blue 16px, rgb(230, 245, 24) 17px);
+}
+td:hover::after{
+  content: '';  
+  height: 600px;
+  left: 0;
+  position: absolute;  
+  top: -300px;
+  width: 100%;
+  z-index: -1;
+  background-color: rgb(255, 255, 143);
+}
+  </style>
+</head>
+<body>
+   <table width="300px" height="300px" cellspacing="0" border="1">
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+   </table>
+</body>
+</html>
+
+
+
+<!--Форма регистрации-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Форма регистрации</title>
+    <style>
+        body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+        div{
+            padding: 25px;
+            border: 1px solid rgb(168, 168, 168);
+        }
+        form{
+            padding: 5px;
+            max-width: 500px;
+        }
+        p{font-weight: bold}
+        span{margin-left: 5px}
+       
+        input{
+            margin-left: 30px;
+            width: 250px;
+            font-weight: bold;
+        }
+        #recapcha{font-weight: normal}
+        
+        form p:nth-child(3),
+        form p:nth-child(6){
+          margin-bottom: 50px;
+        }
+        
+        input:valid + span::after{content: url(valid.png)}
+        input:invalid + span::after{content: url(invalid.png)}
+        /*#recapcha:invalid + span::after{
+            content: url(invalid.png) ' Не правильное число';
+            font-size: 14px;
+            font-family: Arial;
+            color: red;
+        }*/
+        input[type='submit']{
+            margin-left: 100px;
+            padding: 5px;
+            width: 200px;
+            border-radius: 15px;
+            border: none;
+            background: linear-gradient(rgb(0, 128, 0), rgb(32, 196, 32), rgb(0, 128, 0));
+            font-weight: normal;
+            color: white;
+        }
+        input[type='submit']:focus{outline: none}
+        input[type='submit']:hover{cursor: pointer}
+        
+        .button{
+            margin-top: 10px;
+            padding: 30px;
+            background: rgb(197, 197, 197);
+        }
+    </style>
+</head>
+<body>  
+    <div>
+        <form action="">
+            <p>Имя <input  required type="text" name="name" autocomplete="off"><span></span></p>
+            <p>Фамилия <input required type="text" name="surname" autocomplete="off"><span></span></p>
+            <p>Город <input required type="text" name="city" autocomplete="off"><span></span></p>
+            <p>Эл. почта <input required type="email" name="email" autocomplete="off"><span></span></p>
+            <p>Пароль <input required type="password" name="password" minlength="4" maxlength="16" id="password1"><span></span></p>
+            <p>Повторите <input required type="password" name="re-password" maxlength="16" id="password2"><span></span></p>
+            <p>Введите число с картинки</p>
+            <p><img src="capcha.png" /> <input required type="text" name="re-capcha" maxlength="5" id="recapcha" pattern="55102" autocomplete="off"><span></span></p>
+            
+        </form>
+    </div>
+    <p class="button"><input type="submit" value="Зарегистрироваться"></p>
+        <script type="text/javascript">
+          window.onload = function () {
+              document.getElementById("password1").onchange = validatePassword;
+              document.getElementById("password2").onchange = validatePassword;
+          }
+          function validatePassword(){
+          var pass2=document.getElementById("password2").value;
+          var pass1=document.getElementById("password1").value;
+          if(pass1!=pass2)
+              document.getElementById("password2").setCustomValidity("Пароли не совпадают");
+          else
+              document.getElementById("password2").setCustomValidity('');
+          //empty string means no validation error
+          }
+          </script>
+</body>
+</html>
+
+
+
+<!--Ход конем-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ход конем</title>
+    <style>
+        div{
+            display: inline-flex;
+            flex-wrap: wrap;
+            width: 126px;
+            height: 126px;
+            border: 1px solid #000;
+        }
+        label{
+            display: inline-block;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+        }
+        input[type='checkbox']{display: none}
+        input[type='checkbox'] + span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(konyk.png) no-repeat;
+            background-position: 0 -40px;
+        }
+        input[type='checkbox']:checked + span{background-position: 0 0px}
+    </style>
+</head>
+<body>  
+    <div>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+        <label><input type="checkbox"><span></span></label>
+    </div>
+</body>
+</html>
+
+
+
+<!--Хостинг-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Хостинг</title>
+    <style>
+       body{
+        background: rgb(61, 89, 131);
+       }
+       .block{
+           display: flex;
+           margin: 0 auto;
+           width: 900px;
+           border-radius: 15px;
+           background: white;
+           font-family: Arial, sans-serif;
+           box-shadow: 0px 10px 30px 5px rgba(7, 7, 7, 0.521);
+       }
+       .virtual, .cloud, .global{
+           margin: 15px 0;
+           width: 100%;
+           text-align: center;
+           border-right: 1px solid rgb(133, 133, 133);
+       }
+       .global{border: none}
+       
+       .foto1, .foto2, .foto3{   
+           margin: 0 auto;
+           width: 61px;
+           height: 42px;
+           background-image: url(http://htmlbook.ru/files/hosting.png);    
+       }
+       .foto1{background-position: 0 0}
+       .foto2{background-position: 0 -42px}
+       .foto3{background-position: 0 -84px}
+       
+       h2{
+           font-size: 18px;
+           color: orangered;
+       }
+       button{
+           padding: 5px 10px;
+           border-radius: 5px;
+           border: none;
+           background: orangered;
+           color: white;
+       }
+    </style>
+</head>
+<body>  
+    <div class="block">
+    <div class="virtual">
+        <div class="foto1"></div>
+        <h2>Виртуальный хостинг</h2>
+        <p>3.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    <div class="cloud">
+        <div class="foto2"></div>
+        <h2>Облачный хостинг</h2>
+        <p>68.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    <div class="global">
+        <div class="foto3"></div>
+        <h2>Выделенный центр</h2>
+        <p>217.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+<!--Эквалайзер-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Эквалайзер</title>
+    <style>
+    body{
+        background: #333;
+    }
+    .block{
+        display: flex;
+        align-items: flex-end;
+    }
+    .eq1, .eq2, .eq3, .eq4, .eq5, .eq6{
+        margin: 3px;
+        width: 15px;
+        background: repeating-linear-gradient(to bottom, transparent, 
+                    transparent 10px, #333 10px, #333 13px),
+                    linear-gradient(to bottom, #ffd059, #ff8c00);
+        border-radius: 3px 3px 0 0;
+    }
+    .eq1{
+        height: 100px;
+    }
+    .eq2{
+        height: 35px;
+    }
+    .eq3{
+        height: 152px;
+    }
+    .eq4{
+        height: 178px;
+    }
+    .eq5{
+        height: 126px;
+    }
+    .eq6{
+        height: 61px;
+    }
+    </style>
+</head>
+<body>
+    <div class="block">
+    <div class="eq1"></div>
+    <div class="eq2"></div>
+    <div class="eq3"></div>
+    <div class="eq4"></div>
+    <div class="eq5"></div>
+    <div class="eq6"></div>
+    </div>
+</body>
+</html>
+
+
+
+<!--Эскиз-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Эскиз</title>
+    <style>
+        div{
+            margin: 50px 0;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        p{
+            position: relative;
+            margin: 0 auto;
+            padding: 15px 0;
+            width: 95%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1em;
+            background: wheat;
+        }
+        p::before{
+            content: '';
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 1px;
+            height: 100px;
+            background: #000;
+        }
+        p::after{
+            content: '';
+            position: absolute;
+            top: -25px;
+            right: 0;
+            width: 1px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Рабочий эскиз</p>
+    </div>
+</body>
+</html>
