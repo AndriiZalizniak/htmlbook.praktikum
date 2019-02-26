@@ -1,0 +1,57 @@
+<!--Прогноз погоды-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Прогноз погоды</title>
+    <style>
+      section{
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 26px;
+      }
+      .sun, .snow, .blizzard{
+        width: 130px;
+        margin-right: 3px;
+      }
+      .sun:hover, .snow:hover, .blizzard:hover{box-shadow: 0 0 10px rgba(0,0,0,0.7)}
+      #p-top{
+        background: rgb(107, 194, 201);
+        color: white;
+        margin: 0 0 10px 0;
+      }
+      #p-bottom{margin-bottom: 10px}
+
+      .img1, .img2, .img3{height: 85px}
+
+      .img1{background: url(http://htmlbook.ru/files/weather-sun.jpg) no-repeat center}
+      .img2{background: url(http://htmlbook.ru/files/weather-snow.jpg) no-repeat center}
+      .img3{background: url(http://htmlbook.ru/files/weather-blizzard.jpg) no-repeat center}
+    </style>
+ </head>
+ <body>
+   <section>
+  <div class="sun">
+      <p id="p-top">31.08</p>
+      <div class="img1"></div>
+      <p id="p-bottom">+20&ordm;</p>
+   </div>
+   <div class="snow">
+     <p id="p-top">01.09</p>
+     <div class="img2"></div>
+     <p id="p-bottom">-3&ordm;</p>
+   </div>
+   <div class="blizzard">
+     <p id="p-top">02.09</p>
+     <div class="img3"></div>
+     <p id="p-bottom">-10&ordm;</p>
+   </div>
+  </section>
+</body>
+</html>

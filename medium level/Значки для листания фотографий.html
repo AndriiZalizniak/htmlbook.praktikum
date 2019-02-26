@@ -1,0 +1,71 @@
+<!--Значки для листания фотографий-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Значки для листания фотографий</title>
+    <style>
+        input{
+            display: none;
+        }
+        .foto{
+            float: left;
+            position: relative;      
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            background-color: #000;
+            cursor: pointer;
+            margin-right: 10px;
+            bottom: -348px;
+            left: 240px;
+        }
+        #foto1:checked ~ .label1,
+        #foto2:checked ~ .label2,
+        #foto3:checked ~ .label3,
+        #foto4:checked ~ .label4{
+            background-color: #f00;
+            box-shadow: 0 0 4px 1px #fff;
+            cursor: auto;
+            transition: 0.5s;
+        }
+        #foto1:checked ~ .nav{
+            background: url(android.png);
+            transition: 0.3s;
+        }
+        #foto2:checked ~ .nav{
+            background: url(river.jpg);
+            
+            transition: 0.3s;
+        }
+        #foto3:checked ~ .nav{
+            background: url(border.png);
+            transition: 0.3s;
+        }
+        #foto4:checked ~ .nav{
+            background-image: url(check-bg.png);
+            transition: 0.3s;
+        }    
+        .nav{
+            width: 600px;
+            height: 380px;
+        }
+    </style>
+</head>
+<body>
+        <input type="radio" name="radio_foto" id="foto1" checked>
+        <input type="radio" name="radio_foto" id="foto2" >
+        <input type="radio" name="radio_foto" id="foto3">
+        <input type="radio" name="radio_foto" id="foto4">
+        <label for="foto1" class="foto label1"></label>
+        <label for="foto2" class="foto label2"></label>
+        <label for="foto3" class="foto label3"></label>
+        <label for="foto4" class="foto label4"></label>   
+        <div class="nav"></div>
+</body>
+</html>

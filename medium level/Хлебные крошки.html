@@ -1,0 +1,43 @@
+<!--Хлебные крошки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Хлебные крошки</title>
+    <style>
+      .main-line{
+            width: 100%;
+            height: 40px;
+            border-radius: 0 50px 50px 0;
+            background: linear-gradient( rgb(255, 255, 255), rgb(195, 221, 154));
+            position: relative;
+            overflow: hidden;
+            box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+        }
+        .one, .two, .three, .four{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+          padding: 0 10px 0 5px;
+          height: 40px;
+          width: 3%;
+          border-right: 2px solid rgb(255, 255, 255);
+          border-radius: 0 50px 50px 0;
+        }
+        #num4{width: 6%}
+  </style>
+ </head>
+ <body>
+    <div class="main-line">
+      <span id="num1" class="one">Uno</span>
+      <span id="num2" class="two">Dos</span>
+      <span id="num3" class="three">Tres</span>
+      <span id="num4" class="four">Quatro</span>
+    </div>
+</body>
+</html>

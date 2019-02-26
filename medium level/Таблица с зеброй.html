@@ -1,0 +1,42 @@
+<!--Таблица с зеброй-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Таблица с зеброй</title>
+    <style>
+   .lux { 
+    width: 300px;
+    border: 1px solid #a52a2a;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .lux th {
+    background: #a52a2a;
+    color: white; 
+   }
+   .lux td { 
+    border-bottom: 1px solid #a52a2a;
+   }
+   .lux td, .lux th {
+    padding: 4px;
+   }
+   /*-------------Новые стили----------*/
+   tr:nth-child(3), tr:nth-child(5){background: rgb(255, 235, 213)}
+   tr:nth-child(2), tr:nth-child(4){background: rgb(255, 244, 232)}
+   td:nth-child(2), td:nth-child(3), td:nth-child(4){text-align: center}
+  </style>
+ </head>
+ <body>
+  <table class="lux">
+   <tr><th></th><th>2004</th><th>2005</th><th>2006</th></tr>
+   <tr><td>Рубины</td><td>43</td><td>51</td><td>79</td></tr>
+   <tr><td>Изумруды</td><td>28</td><td>34</td><td>48</td></tr>
+   <tr><td>Сапфиры</td><td>29</td><td>57</td><td>36</td></tr>
+   <tr><td>Аметисты</td><td>23</td><td>64</td><td>97</td></tr>
+  </table>
+</body>
+</html>

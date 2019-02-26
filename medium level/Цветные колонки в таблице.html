@@ -1,0 +1,70 @@
+<!--Цветные колонки в таблице-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Цветные колонки в таблице</title>
+    <style>
+      th{
+        text-align: left;
+        background: gray;
+        color: white;
+      }
+      td:nth-child(1){
+        background: rgb(161, 255, 255);
+      }
+      td:nth-child(2), 
+      td:nth-child(4){
+        background: rgb(252, 252, 158);
+      }
+      td:nth-child(3){
+        text-align: center;
+        background: rgb(161, 255, 255);
+      }
+    </style>
+</head>
+<body>
+     <table width='450px' cellspacing="0" border="1">
+       <tr>
+         <th>Название</th>
+         <th>Цвет</th>
+         <th>Твердость по Моосу</th>
+         <th>Формула</th>
+       </tr>
+       <tr>
+         <td>Алмаз</td>
+         <td>Белый</td>
+         <td>10</td>
+         <td>С</td>
+       </tr>
+       <tr>
+         <td>Рубин</td>
+         <td>Красный</td>
+         <td>9</td>
+         <td>Al<sub>2</sub>O<sub>3</sub></td>
+       </tr>
+       <tr>
+         <td>Аметист</td>
+         <td>Голубой</td>
+         <td>7</td>
+         <td>SiO<sub>2</sub></td>
+        </tr>
+        <tr>
+          <td>Изумруд</td>
+          <td>Зеленый</td>
+          <td>8</td>
+          <td>Be<sub>3</sub>Al<sub>2</sub>(SiO<sub>3</sub>)<sub>6</sub></td>
+        </tr>
+        <tr>
+          <td>Сапфир</td>
+          <td>Голубой</td>
+          <td>9</td>
+          <td>Al<sub>2</sub>O<sub>3</sub></td>
+        </tr>
+     </table>
+</body>
+</html>

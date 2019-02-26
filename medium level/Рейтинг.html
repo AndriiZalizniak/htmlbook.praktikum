@@ -1,0 +1,63 @@
+<!--Рейтинг-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Рейтинг</title>
+    <style>
+       .main-line{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 50px;
+          border-radius: 5px;
+          font-size: 22px;
+          background: gray;
+          color: white;
+        }
+        .left-part{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          border-radius: 5px 0 0 5px;
+          background: rgb(93, 139, 22);
+        }  
+        .right-part{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 200px;
+          border-radius: 0px 5px 5px 0;
+        }
+        button{
+          width: 30px;
+          height: 30px;
+          border-radius: 6px;
+          border: none;
+          box-shadow: 0 0 5px rgba(0,0,0,0.5);
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+        }
+        button:nth-child(1){background: rgb(177, 31, 31)}
+        button:nth-child(3){background: rgb(94, 141, 23)}
+    </style>
+</head>
+<body>
+    <div class="main-line">
+      <div class="left-part">
+        <span>9691</span>
+      </div>
+      <div class="right-part">
+        <button>-</button>
+        <span>6</span>
+        <button>+</button>
+      </div>
+    </div>
+</body>
+</html>

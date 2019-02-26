@@ -1,0 +1,66 @@
+<!--Рамка с поворотом-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Рамка с поворотом</title>
+    <style>
+      div{ /*---------------вариант 1*/
+        width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+      }
+      .first{
+        margin: 15px;
+        transform: rotate(-6deg);
+     }
+     .second{ 
+      
+       position: relative;
+       top: -3px;
+       left: -3px;
+       background: url(http://htmlbook.ru/example/images/venera.png);
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+       transform: rotate(6deg);
+     }
+     /*.img{ -------вариант 2---------
+      margin: 15px;
+       position: relative;
+       top: -3px;
+       left: -3px;
+       background: url(http://htmlbook.ru/example/images/venera.png);
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+     }
+     .img::after{
+       position: absolute;
+       top: -3px;
+       left: -3px;
+       content: '';
+       width: 128px;
+       height: 128px;
+       border: 3px solid rgb(158, 158, 158);
+       box-shadow: 0 0 0 2px rgb(107, 107, 107);
+       z-index: -2;
+       transform: rotate(-6deg);
+     }*/
+
+    </style>
+ </head>
+ <body>
+   <!--вариант 1--><div class="first"><div class="second"></div></div>
+   <!--вариант 2
+     <div class="img"></div>     
+    -->
+</body>
+</html>

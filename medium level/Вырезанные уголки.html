@@ -1,0 +1,48 @@
+<!--Вырезанные уголки-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Вырезанные уголки</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; 
+            margin-left: 2px; 
+            width: 400px;
+            height: 100px;
+            background: green;
+        }
+        div::before{
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 92px;
+            left: 6px;
+            top: 12px;
+            background: green;
+        }
+        div::after{
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 92px;
+            left: 410px;
+            top: 12px;
+            background: green;
+        }
+        p{
+            margin: 25px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+       <div><p>Содержимое</p></div>
+</body>
+</html>
