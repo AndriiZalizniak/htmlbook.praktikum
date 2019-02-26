@@ -1,0 +1,50 @@
+<!--Рамка вокруг текста-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Рамка вокруг текста</title>
+  <style>
+   p{
+     margin: 10px;
+     padding: 5px;
+     width: 200px;
+     
+     background: red;
+     /*box-shadow: 0 0 0px 1px white,------3
+                 0 0 0px 2px red;
+     /*border: 2px solid white; ----1
+     outline: 2px solid red;*/
+   }
+
+   /*p::before{------2
+     position: absolute;
+     content: '';
+     padding: 5px;
+     left: 15px;
+     top: 8px;
+     width: 205px;
+     height: 23px;
+     background: rgb(255, 255, 255); 
+     z-index: -1; 
+    }
+   p::after{
+     position: absolute;
+     content: '';
+     padding: 5px;
+     left: 12px;
+     top: 5px;
+     width: 211px;
+     height: 29px;
+     background: rgb(255, 0, 0); 
+     z-index: -2; 
+    }*/
+  </style>
+</head>
+<body>
+   <p>Рамка вокруг текста</p>
+</body>
+</html>

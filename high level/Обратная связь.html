@@ -1,0 +1,60 @@
+<!--Обратная связь-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Обратная связь</title>
+  <style>
+   div{
+      position: fixed;
+      padding: 10px 0 10px 10px;
+      bottom: 100px;
+      left: -390px;
+      width: 380px;
+      height: 100px;
+      transition: 2s linear;
+      transition-delay: 0.5s;
+      background: rgb(85, 85, 85);
+    }
+    .visib{
+      position: relative;
+      padding: 0 5px;
+      bottom: 119px;
+      left: 380px;
+      width: 110px;
+      border-radius: 0 0 15px 15px;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      transition: 2s linear;
+      transition-delay: 0.5s;
+      text-align: center;
+      background: yellow;
+    }
+    .par{
+      position: relative;
+      margin-left: 5px;
+      bottom: 115px;
+      left: 110px;
+      width: 270px;
+      font-size: 18px;
+      line-height: 1.25em;
+      word-wrap: break-word;
+      color: white;
+    }
+     div:hover{
+      left: 0px;
+      transition: 2s linear;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="http://htmlbook.ru/files/feedback.jpg" alt="">
+    <p class="par">Если у вас возникли вопросы по этому коду, звоните мне по телефону: 555-3298. <br>Звонок платный</p>
+    <p class="visib">Обратная связь</p>
+  </div>
+</body>
+</html>

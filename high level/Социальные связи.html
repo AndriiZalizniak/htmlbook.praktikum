@@ -1,0 +1,96 @@
+<!--Социальные связи-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Социальные связи</title>
+  <style>
+    body{
+      margin: 25px;
+    }
+    #foto{
+      position: relative;
+      display: inline-block;
+      margin-right: 25px;
+    }
+    .person3{
+      margin-right: 0;
+    }
+    img{
+      border-radius: 50%;
+      border: 3px solid rgb(191, 191, 191);
+    }
+    a{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(http://htmlbook.ru/files/social_icons.png);
+    }
+    .person1-vk,
+    .person2-vk,
+    .person3-vk{
+      top: 0;
+      left: 20px;
+      background-position: -60px -30px;
+    }
+    .person1-vk:hover,
+    .person2-vk:hover,
+    .person3-vk:hover{
+      background-position: -60px 0px;
+    }
+    .person1-tw{
+      top: 30px;
+      left: -5px;
+      background-position: -30px -30px;
+    }
+    .person1-tw:hover{
+      background-position: -30px 0px;
+    }
+    .person1-fb,
+    .person3-fb{
+      top: 66px;
+      left: -15px;
+      background-position: 0 -30px;
+    }
+    .person1-fb:hover,
+    .person3-fb:hover{
+      background-position: 0 0;
+    }
+    .person1-em,
+    .person2-em,
+    .person3-em{
+      top: 150px;
+      left: 65px;
+      background-position: -90px -30px;
+    }
+    .person1-em:hover,
+    .person2-em:hover,
+    .person3-em:hover{
+      background-position: -90px 0;
+    }
+  </style>
+</head>
+<body>
+   <div  id="foto" class="person1">
+     <img src="http://htmlbook.ru/files/person1.jpg" alt="бабенка в шляпе">
+     <a href="" class="person1-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person1-tw" title="Перейти на страницу Твиттер"></a>
+     <a href="" class="person1-fb" title="Перейти на страницу Фейсбук"></a>
+     <a href="" class="person1-em" title="Написать письмо"></a>
+   </div>
+   <div id="foto" class="person2">
+     <img src="http://htmlbook.ru/files/person2.jpg" alt="бабенка с цветком">
+     <a href="" class="person2-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person2-em" title="Написать письмо"></a>
+   </div>
+   <div id="foto" class="person3">
+     <img src="http://htmlbook.ru/files/person3.jpg" alt="менеджер бабенок">
+     <a href="" class="person3-vk" title="Перейти на страницу ВКонтакте"></a>
+     <a href="" class="person3-fb" title="Перейти на страницу Фейсбук"></a>
+     <a href="" class="person3-em" title="Написать письмо"></a>
+   </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!--Эквалайзер-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Эквалайзер</title>
+    <style>
+    body{
+        background: #333;
+    }
+    .block{
+        display: flex;
+        align-items: flex-end;
+    }
+    .eq1, .eq2, .eq3, .eq4, .eq5, .eq6{
+        margin: 3px;
+        width: 15px;
+        background: repeating-linear-gradient(to bottom, transparent, 
+                    transparent 10px, #333 10px, #333 13px),
+                    linear-gradient(to bottom, #ffd059, #ff8c00);
+        border-radius: 3px 3px 0 0;
+    }
+    .eq1{
+        height: 100px;
+    }
+    .eq2{
+        height: 35px;
+    }
+    .eq3{
+        height: 152px;
+    }
+    .eq4{
+        height: 178px;
+    }
+    .eq5{
+        height: 126px;
+    }
+    .eq6{
+        height: 61px;
+    }
+    </style>
+</head>
+<body>
+    <div class="block">
+    <div class="eq1"></div>
+    <div class="eq2"></div>
+    <div class="eq3"></div>
+    <div class="eq4"></div>
+    <div class="eq5"></div>
+    <div class="eq6"></div>
+    </div>
+</body>
+</html>

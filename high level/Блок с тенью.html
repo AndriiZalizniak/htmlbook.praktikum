@@ -1,0 +1,42 @@
+<!--Блок с тенью-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Блок с тенью</title>
+    <style>
+    .title{
+      word-wrap: break-word;
+      padding: 0 15px;
+      margin: 10px 10px -1px 10px;
+      max-width: 250px;
+      background: rgb(188, 212, 172);
+      border: 1px solid rgb(108, 172, 66);
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 1px 7px 10px 0 rgb(188, 212, 172),
+                  0 -1px 10px 1px rgba(56, 141, 0, 0.5);
+      font-size: 22px;
+    }
+    .subtitle{
+      position: relative;
+      margin: 0 10px 10px 10px;
+      padding: 25px 0 25px 15px;
+      height: 100px;
+      background: rgb(188, 212, 172);
+      border: 1px solid rgb(108, 172, 66);
+      border-radius: 0 5px 5px 5px;
+      box-shadow: 0 0 10px 2px rgba(56, 141, 0, 0.5);
+      z-index: -1;
+    }
+  </style>
+ </head>
+ <body>
+   <p class="title">Заголовок</p>
+   <p class="subtitle">Содержимое</p>
+</body>
+</html>

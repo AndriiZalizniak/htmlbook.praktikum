@@ -1,0 +1,77 @@
+<!--Хостинг-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Хостинг</title>
+    <style>
+       body{
+        background: rgb(61, 89, 131);
+       }
+       .block{
+           display: flex;
+           margin: 0 auto;
+           width: 900px;
+           border-radius: 15px;
+           background: white;
+           font-family: Arial, sans-serif;
+           box-shadow: 0px 10px 30px 5px rgba(7, 7, 7, 0.521);
+       }
+       .virtual, .cloud, .global{
+           margin: 15px 0;
+           width: 100%;
+           text-align: center;
+           border-right: 1px solid rgb(133, 133, 133);
+       }
+       .global{border: none}
+       
+       .foto1, .foto2, .foto3{   
+           margin: 0 auto;
+           width: 61px;
+           height: 42px;
+           background-image: url(http://htmlbook.ru/files/hosting.png);    
+       }
+       .foto1{background-position: 0 0}
+       .foto2{background-position: 0 -42px}
+       .foto3{background-position: 0 -84px}
+       
+       h2{
+           font-size: 18px;
+           color: orangered;
+       }
+       button{
+           padding: 5px 10px;
+           border-radius: 5px;
+           border: none;
+           background: orangered;
+           color: white;
+       }
+    </style>
+</head>
+<body>  
+    <div class="block">
+    <div class="virtual">
+        <div class="foto1"></div>
+        <h2>Виртуальный хостинг</h2>
+        <p>3.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    <div class="cloud">
+        <div class="foto2"></div>
+        <h2>Облачный хостинг</h2>
+        <p>68.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    <div class="global">
+        <div class="foto3"></div>
+        <h2>Выделенный центр</h2>
+        <p>217.95$ в месяц</p>
+        <button>Подробнее</button>
+    </div>
+    </div>
+</body>
+</html>
