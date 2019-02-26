@@ -1,0 +1,39 @@
+<!--Чередующиеся квадраты-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Чередующиеся квадраты</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .block1, .block2, .block3, .block4, .block5{
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            background: black;
+        }
+        .block2, .block4{
+            background: aqua;
+        }
+        .block1:hover, .block2:hover, .block3:hover, .block4:hover, .block5:hover{
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+    <div class="block4"></div>
+    <div class="block5"></div>
+    </div>
+</body>
+</html>
